@@ -9,30 +9,31 @@ Cada atividade deve ser entregue no formato indicado (HTML e/ou CSS), respeitand
 
 ## 🧭 Organização e Entrega das Atividades
 
-1. Cada aluno deve **criar uma branch específica para o bimestre**, com o nome: _bimestre-2_
+#### 1. Cada aluno deve **criar uma branch específica para o bimestre**, com o nome: _bimestre-2_
 
-2. Dentro dessa branch, cada atividade deverá ser salva dentro de uma **pasta nomeada conforme o padrão**:  
-   /Atividade 1
-   /Atividade 2
-   /Atividade 3
-   /...
+#### 2. Dentro dessa branch, cada atividade deverá ser salva dentro de uma **pasta nomeada conforme o padrão**:  
+  - /Atividade 1
+  - /Atividade 2
+  - /Atividade 3
+  - /...
 
 > Exemplo: a primeira atividade deve ficar em `/Atividade 1/estrutura-basica.html`
 
-3. Cada pasta deve conter:
+#### 3. Cada pasta deve conter:
 
 - Os arquivos `.html` e `.css` (quando aplicável);
 - Um arquivo `README.md` descrevendo o que foi feito (breve resumo em 3–5 linhas).
 
-4. Após concluir a atividade:
+#### 4. Após concluir a atividade:
 
 - Faça o **commit** dos arquivos;
 - Faça o **push** para a branch `bimestre-2` no GitHub;
 - Envie o link da pasta correspondente no **Google Sala de Aula**.
 
 ---
+## Atividades
 
-## 🟢 AS1 – Estruturando Cabeçalho e Rodapé
+### 🟢 AS1 – Estruturando Cabeçalho e Rodapé
 
 **Tema:** Estrutura de Página  
 **Explicação:**  
@@ -49,7 +50,7 @@ Toda página precisa de um **cabeçalho (header)** com título e navegação, e 
 
 ---
 
-## 🟢 AS2 – Primeira Tabela
+### 🟢 AS2 – Primeira Tabela
 
 **Tema:** Organização de Dados  
 **Explicação:**  
@@ -66,7 +67,7 @@ As **tabelas** organizam informações em linhas e colunas — como planilhas. E
 
 ---
 
-## 🟡 AM1 – Tabela de Horários
+###  🟡 AM1 – Tabela de Horários
 
 **Tema:** Tabelas Avançadas  
 **Explicação:**  
@@ -83,7 +84,7 @@ Tabelas mais elaboradas usam `colspan` e `rowspan` para unir células, o que per
 
 ---
 
-## 🟡 AM2 – Formulário de Contato
+###  🟡 AM2 – Formulário de Contato
 
 **Tema:** Coleta de Informações  
 **Explicação:**  
@@ -100,7 +101,7 @@ Um **formulário** é o meio pelo qual os usuários enviam dados — como mensag
 
 ---
 
-## 🔴 AC1 – Página Institucional
+###  🔴 AC1 – Página Institucional
 
 **Tema:** Estrutura Completa de Site  
 **Explicação:**  
@@ -117,7 +118,7 @@ Uma **página institucional** reúne o que você aprendeu: estrutura, navegaçã
 
 ---
 
-## 🟢 AS3 – Navegação Interna
+###  🟢 AS3 – Navegação Interna
 
 **Tema:** Âncoras e Navegação Interna  
 **Explicação:**  
@@ -134,7 +135,7 @@ Links internos (`<a href="#id">`) permitem rolar até partes específicas da mes
 
 ---
 
-## 🟢 AS4 – Página com Seções Semânticas
+###  🟢 AS4 – Página com Seções Semânticas
 
 **Tema:** HTML Semântico  
 **Explicação:**  
@@ -150,7 +151,7 @@ O **HTML semântico** usa tags com significado, como `<header>` ou `<article>`, 
 
 ---
 
-## 🟡 AM3 – Formulário de Cadastro Completo
+###  🟡 AM3 – Formulário de Cadastro Completo
 
 **Tema:** Tipos de Campos em Formulários  
 **Explicação:**  
@@ -167,7 +168,7 @@ Os formulários podem ter campos como botões de opção, seletores e caixas de 
 
 ---
 
-## 🟡 AM4 – Estilizando Formulários
+###  🟡 AM4 – Estilizando Formulários
 
 **Tema:** CSS em Formulários  
 **Explicação:**  
@@ -184,7 +185,7 @@ O CSS melhora a aparência dos formulários, destacando campos e botões de form
 
 ---
 
-## 🔴 AC2 – Mini Landing Page Semântica
+###  🔴 AC2 – Mini Landing Page Semântica
 
 **Tema:** Landing Pages e Semântica  
 **Explicação:**  
@@ -202,7 +203,7 @@ Uma **landing page** é uma página de apresentação visual e organizada. A **s
 
 ---
 
-### 📤 Entrega no Google Sala de Aula
+**📤 Entrega no Google Sala de Aula**
 
 1. Faça o **commit** e o **push** para a branch `bimestre-2`.
 2. Copie o link da pasta correspondente à atividade no GitHub.
