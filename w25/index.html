@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demonstração de Acessibilidade: Contraste e Foco</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Demonstração de Acessibilidade: Contraste de Cores e Foco de Teclado</h1>
+    <p>Esta página demonstra dois padrões de acessibilidade da WCAG: Contraste de Cores e Foco de Teclado. Primeiro, mostramos o problema, depois a correção.</p>
+
+    <h2>1. Contraste de Cores</h2>
+    <p>O contraste insuficiente torna o texto difícil de ler para pessoas com deficiências visuais. Aqui, comparamos dois cards: um com contraste ruim (texto cinza claro em fundo branco) e outro com contraste ideal (texto preto em fundo branco).</p>
+    
+    <div class="container">
+        <div class="card bad-contrast" id="bad-card">
+            <h3>Card com Contraste Insuficiente</h3>
+            <p>Este texto é difícil de ler devido ao baixo contraste. Contraste aproximado: 1.25:1 (falha WCAG AA).</p>
+        </div>
+        <div class="card good-contrast">
+            <h3>Card com Contraste Ideal</h3>
+            <p>Este texto é fácil de ler com alto contraste. Contraste: 21:1 (passa WCAG AA).</p>
+        </div>
+    </div>
+    
+    <button class="fix-button" onclick="fixContrast()">Corrigir Contraste</button>
+    <p>Clique no botão acima para corrigir o contraste do card ruim, alterando a cor do texto para preto.</p>
+
+    <h2>2. Foco de Teclado</h2>
+    <p>O foco de teclado permite que usuários que navegam com teclado (como pessoas com deficiências motoras) saibam qual elemento está ativo. Aplicamos um outline forte e vibrante (vermelho) a todos os elementos interativos quando focados.</p>
+    
+    <div class="interactive-demo">
+        <p>Teste o foco pressionando Tab no teclado:</p>
+        <button>Botão 1</button>
+        <button>Botão 2</button>
+        <a href="#demo">Link de Demonstração</a>
+        <input type="text" placeholder="Campo de entrada">
+        <textarea placeholder="Área de texto"></textarea>
+        <select>
+            <option>Opção 1</option>
+            <option>Opção 2</option>
+        </select>
+    </div>
+
+    <h2>3. ARIA e Estrutura</h2>
+    <p>Exemplos de ARIA para melhorar a acessibilidade: botão com ícone, alerta de erro e formulário com labels associados.</p>
+    
+    <button aria-label="Fechar" onclick="closeDemo()">×</button> 
+    <p>Botão com ícone (×) e aria-label para descrever sua função.</p>
+
+    <button onclick="showError()">Simular Erro</button>
+    <div id="error-message" role="alert" aria-live="assertive" style="display: none; color: red; font-weight: bold;">
+        Erro crítico: Falha ao processar a solicitação. Tente novamente.
+    </div>
+
+    <form>
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name">
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script>
+        function fixContrast() {
+            const badCard = document.getElementById('bad-card');
+            badCard.classList.remove('bad-contrast');
+            badCard.classList.add('good-contrast');
+            alert('Contraste corrigido! O texto agora é preto para melhor legibilidade.');
+        }
+
+        function closeDemo() {
+            alert('Demonstração fechada!');
+        }
+
+        function showError() {
+            const errorDiv = document.getElementById('error-message');
+            errorDiv.style.display = 'block';
+            setTimeout(() => {
+                errorDiv.style.display = 'none';
+            }, 5000);
+        }
+    </script>
+</body>
+</html>
